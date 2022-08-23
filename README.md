@@ -9,6 +9,21 @@ It is build using [Top Framework for Python](https://github.com/tradingstrategy-
 - [Installation](https://top-framework.readthedocs.io/en/latest/web-top/installation.html)
 - [Usage](https://top-framework.readthedocs.io/en/latest/web-top/usage.html)
 
+# Features
+
+- Easily integrate with any web server
+
+- Display active and recently completed HTTP requests/responses
+
+- Live top-like monitoring
+
+- Easily locate stalled requests, as requests not making progress
+  are sorted first and marked red
+
+- IP address and country geolocation to understand who is using your web
+  service
+
+
 # Documentation
 
 - [Browse documentation](https://top-framework.readthedocs.io/en/latest/web-top/index.html)
