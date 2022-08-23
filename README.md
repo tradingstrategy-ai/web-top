@@ -41,3 +41,5 @@ It is build using [Top Framework for Python](https://github.com/tradingstrategy-
 # License
 
 MIT.
+
+[Developed and maintained by Trading Strategy](https://tradingstrategy.ai).
