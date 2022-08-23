@@ -4,12 +4,15 @@
 #
 [tool.poetry]
 name = "web-top"
-version = "0.1.0"
+version = "0.1.2"
 description = "web-top is a UNIX top-like tool to live HTTP requests and responses of any web server."
 authors = ["Mikko Ohtamaa <mikko@opensourcehacker.com>"]
 license = "MIT"
 keywords = ["cli", "UNIX", "TUI", "Gunicorn", "WSGI"]
-
+packages = [
+    { include = "webtop" },
+]
+readme = "README.md"
 homepage = "https://top-framework.readthedocs.io/en/latest/web-top/index.html"
 repository = "https://github.com/tradingstrategy-ai/web-top"
 
