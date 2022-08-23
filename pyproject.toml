@@ -8,10 +8,11 @@ version = "0.1.0"
 description = "web-top is a UNIX top-like tool to live HTTP requests and responses of any web server."
 authors = ["Mikko Ohtamaa <mikko@opensourcehacker.com>"]
 license = "MIT"
-eywords = ["cli", "UNIX", "TUI", "Gunicorn", "WSGI"]
+keywords = ["cli", "UNIX", "TUI", "Gunicorn", "WSGI"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+top-framework = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
 
