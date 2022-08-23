@@ -11,7 +11,7 @@ It is build using [Top Framework for Python](https://github.com/tradingstrategy-
 
 # Documentation
 
-- [Browse Sphinx documentation](https://top-framework.readthedocs.io/en/latest/web-top/index.html)
+- [Browse documentation](https://top-framework.readthedocs.io/en/latest/web-top/index.html)
 
 # Community 
 
