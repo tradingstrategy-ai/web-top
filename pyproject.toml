@@ -1,3 +1,7 @@
+#
+# Really nothing goes here, as everything
+# is set up in the parent package top-framework
+#
 [tool.poetry]
 name = "web-top"
 version = "0.1.0"
