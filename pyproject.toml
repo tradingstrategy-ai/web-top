@@ -10,9 +10,12 @@ authors = ["Mikko Ohtamaa <mikko@opensourcehacker.com>"]
 license = "MIT"
 keywords = ["cli", "UNIX", "TUI", "Gunicorn", "WSGI"]
 
+homepage = "https://top-framework.readthedocs.io/en/latest/web-top/index.html"
+repository = "https://github.com/tradingstrategy-ai/web-top"
+
 [tool.poetry.dependencies]
 python = "^3.9"
-top-framework = "^0.1.0"
+top-framework = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 

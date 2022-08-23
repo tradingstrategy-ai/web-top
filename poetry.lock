@@ -160,7 +160,7 @@ rich = ">=12.3.0,<13.0.0"
 
 [[package]]
 name = "top-framework"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python framework for creating UNIX top like TUI applications easily"
 category = "main"
 optional = false
@@ -217,7 +217,7 @@ typing-extensions = ">=3.7.4"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "19797f77dc0ff6ff3d74298b7273c01b9bb6fdfe770204943d3e3fb2aeb08635"
+content-hash = "9b547a907e601d16082d9b470b964c52c172739a370c47b43a3f074c71cc85e4"
 
 [metadata.files]
 click = []
