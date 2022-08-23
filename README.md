@@ -6,6 +6,12 @@ It is build using [Top Framework for Python](https://github.com/tradingstrategy-
 
 ![screenshot](https://raw.githubusercontent.com/tradingstrategy-ai/top-framework/master/docs/source/web-top/screenshot2.png)
 
+Sometimes you just need to log in to your web server and see what's going on.
+`web-top` allows you to do. Instead of focusing Application Performance Management (APM),
+metrics or log storage `web-top` displays what's currently happening in your web server.
+`web-top` is ideal for observing and catching issues when they happen.
+
+
 - [Installation](https://top-framework.readthedocs.io/en/latest/web-top/installation.html)
 - [Usage](https://top-framework.readthedocs.io/en/latest/web-top/usage.html)
 
