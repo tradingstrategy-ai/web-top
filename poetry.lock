@@ -1,4 +1,19 @@
 [[package]]
+name = "beautifulsoup4"
+version = "4.11.1"
+description = "Screen-scraping library"
+category = "dev"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.dependencies]
+soupsieve = ">1.2"
+
+[package.extras]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[[package]]
 name = "click"
 version = "8.1.3"
 description = "Composable command line interface toolkit"
@@ -56,6 +71,18 @@ python-versions = "*"
 test = ["setuptools", "emoji", "pytest"]
 
 [[package]]
+name = "hupper"
+version = "1.10.3"
+description = "Integrated process monitor for developing and reloading daemons."
+category = "dev"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[package.extras]
+docs = ["watchdog", "sphinx", "pylons-sphinx-themes"]
+testing = ["watchdog", "pytest", "pytest-cov", "mock"]
+
+[[package]]
 name = "marshmallow"
 version = "3.17.1"
 description = "A lightweight library for converting complex datatypes to and from native Python datatypes."
@@ -103,6 +130,45 @@ python-versions = ">=3.6"
 pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 
 [[package]]
+name = "pastedeploy"
+version = "2.1.1"
+description = "Load, configure, and compose WSGI applications and servers"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.extras]
+paste = ["paste"]
+docs = ["Sphinx (>=1.7.5)", "pylons-sphinx-themes"]
+
+[[package]]
+name = "plaster"
+version = "1.0"
+description = "A loader interface around multiple config file formats."
+category = "dev"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[package.extras]
+docs = ["sphinx", "pylons-sphinx-themes"]
+testing = ["pytest", "pytest-cov"]
+
+[[package]]
+name = "plaster-pastedeploy"
+version = "0.7"
+description = "A loader implementing the PasteDeploy syntax to be used by plaster."
+category = "dev"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[package.dependencies]
+PasteDeploy = ">=2.0"
+plaster = ">=0.5"
+
+[package.extras]
+testing = ["pytest-cov", "pytest"]
+
+[[package]]
 name = "pygments"
 version = "2.13.0"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -123,6 +189,28 @@ python-versions = ">=3.6.8"
 
 [package.extras]
 diagrams = ["railroad-diagrams", "jinja2"]
+
+[[package]]
+name = "pyramid"
+version = "2.0"
+description = "The Pyramid Web Framework, a Pylons project"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+hupper = ">=1.5"
+plaster = "*"
+plaster-pastedeploy = "*"
+translationstring = ">=0.4"
+venusian = ">=1.0"
+webob = ">=1.8.3"
+"zope.deprecation" = ">=3.5.0"
+"zope.interface" = ">=3.8.0"
+
+[package.extras]
+testing = ["pytest-cov", "pytest (>=5.4.2)", "coverage", "zope.component (>=4.0)", "webtest (>=1.3.1)"]
+docs = ["sphinxcontrib-autoprogram", "sphinx-copybutton", "repoze.sphinx.autointerface", "pylons-sphinx-latesturl", "pylons-sphinx-themes (>=1.0.8)", "docutils", "Sphinx (>=3.0.0)"]
 
 [[package]]
 name = "redispy"
@@ -146,6 +234,14 @@ pygments = ">=2.6.0,<3.0.0"
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
+
+[[package]]
+name = "soupsieve"
+version = "2.3.2.post1"
+description = "A modern CSS selector implementation for Beautiful Soup."
+category = "dev"
+optional = false
+python-versions = ">=3.6"
 
 [[package]]
 name = "textual"
@@ -176,6 +272,17 @@ typer = ">=0.6.1,<0.7.0"
 [package.extras]
 gunicorn = ["python-lorem (>=1.1.2,<2.0.0)", "gunicorn (>=20.1.0,<21.0.0)"]
 docs = ["sphinx-autodoc-typehints (>=1.16.0,<2.0.0)", "furo (>=2022.6.21,<2023.0.0)", "Sphinx (>=5.1.1,<6.0.0)", "sphinx-sitemap (>=2.2.0,<3.0.0)"]
+
+[[package]]
+name = "translationstring"
+version = "1.4"
+description = "Utility library for i18n relied on by various Repoze and Pyramid packages"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.extras]
+docs = ["pylons-sphinx-themes", "docutils", "Sphinx (>=1.3.1)"]
 
 [[package]]
 name = "typer"
@@ -214,27 +321,119 @@ python-versions = "*"
 mypy-extensions = ">=0.3.0"
 typing-extensions = ">=3.7.4"
 
+[[package]]
+name = "venusian"
+version = "3.0.0"
+description = "A library for deferring decorator actions"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+testing = ["coverage", "pytest-cov", "pytest"]
+docs = ["repoze.sphinx.autointerface", "sphinx"]
+
+[[package]]
+name = "waitress"
+version = "2.1.2"
+description = "Waitress WSGI server"
+category = "dev"
+optional = false
+python-versions = ">=3.7.0"
+
+[package.extras]
+docs = ["Sphinx (>=1.8.1)", "docutils", "pylons-sphinx-themes (>=1.0.9)"]
+testing = ["pytest", "pytest-cover", "coverage (>=5.0)"]
+
+[[package]]
+name = "webob"
+version = "1.8.7"
+description = "WSGI request and response object"
+category = "dev"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+
+[package.extras]
+docs = ["Sphinx (>=1.7.5)", "pylons-sphinx-themes"]
+testing = ["pytest (>=3.1.0)", "coverage", "pytest-cov", "pytest-xdist"]
+
+[[package]]
+name = "webtest"
+version = "3.0.0"
+description = "Helper to test WSGI applications"
+category = "dev"
+optional = false
+python-versions = ">=3.6, <4"
+
+[package.dependencies]
+beautifulsoup4 = "*"
+waitress = ">=0.8.5"
+WebOb = ">=1.2"
+
+[package.extras]
+tests = ["wsgiproxy2", "pytest-cov", "pytest", "pyquery", "pastedeploy", "coverage"]
+docs = ["Sphinx (>=1.8.1)", "pylons-sphinx-themes (>=1.0.8)", "docutils"]
+
+[[package]]
+name = "zope.deprecation"
+version = "4.4.0"
+description = "Zope Deprecation Infrastructure"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.extras]
+docs = ["sphinx"]
+test = ["zope.testrunner"]
+
+[[package]]
+name = "zope.interface"
+version = "5.4.0"
+description = "Interfaces for Python"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.extras]
+docs = ["sphinx", "repoze.sphinx.autointerface"]
+test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
+testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "9b547a907e601d16082d9b470b964c52c172739a370c47b43a3f074c71cc85e4"
+content-hash = "02ede4ac1bee41c71893a13c66b2eb0ffe154fb5a46e1d6e18ab96b6754deeb4"
 
 [metadata.files]
+beautifulsoup4 = []
 click = []
 colorama = []
 commonmark = []
 dataclasses-json = []
 emoji-country-flag = []
+hupper = []
 marshmallow = []
 marshmallow-enum = []
 mypy-extensions = []
 packaging = []
+pastedeploy = []
+plaster = []
+plaster-pastedeploy = []
 pygments = []
 pyparsing = []
+pyramid = []
 redispy = []
 rich = []
+soupsieve = []
 textual = []
 top-framework = []
+translationstring = []
 typer = []
 typing-extensions = []
 typing-inspect = []
+venusian = []
+waitress = []
+webob = []
+webtest = []
+"zope.deprecation" = []
+"zope.interface" = []
